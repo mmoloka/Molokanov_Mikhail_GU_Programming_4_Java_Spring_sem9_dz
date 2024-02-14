@@ -20,6 +20,7 @@
         <module>issue-service</module>
         <module>discovery-service</module>
         <module>reader-service</module>
+        <module>method-timer-starter</module>
     </modules>
     <properties>
         <java.version>21</java.version>

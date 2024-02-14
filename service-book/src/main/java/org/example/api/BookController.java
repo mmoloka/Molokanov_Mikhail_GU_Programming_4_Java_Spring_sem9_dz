@@ -1,6 +1,7 @@
 package org.example.api;
 
 import com.github.javafaker.Faker;
+import org.example.timer.Timer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,6 +37,7 @@ public class BookController {
         this.books = List.copyOf(books);
     }
 
+    @Timer
     @GetMapping
     public List<Book> getAll() {
         return books;
